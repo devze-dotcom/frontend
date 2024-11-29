@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doce Sabor - Padaria Artesanal</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #f4a300;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      max-width: 150px; /* Ajuste o tamanho conforme necessário */
+      height: auto;
+    }
+
+    header nav ul {
+      list-style-type: none;
+      display: flex;
+      gap: 15px;
+    }
+
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .banner {
+      background: url('banner.jpg') no-repeat center center/cover;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .banner h1 {
+      color: #fff;
+      font-size: 3rem;
+    }
+
+    .cta-btn {
+      background-color: #f4a300;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer a {
+      color: #f4a300;
+    }
+
+    .produtos {
+      display: flex;
+      justify-content: space-around;
+      padding: 50px;
+    }
+
+    .produto {
+      text-align: center;
+      width: 30%;
+    }
+
+    .produto img {
+      width: 100%;
+      max-width: 250px;
+    }
+
+    .slider {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      padding: 50px 0;
+    }
+
+    .card {
+      width: 250px;
+      background-color: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.jpg" alt="Logo da Padaria Doce Sabor" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#historia">História</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="home" class="banner">
+    <img src="banner.png" alt="Produtos da Doce Sabor">
+    <h1>Descubra o sabor do pão artesanal!</h1>
+    <a href="#produtos" class="cta-btn">Conheça nossos produtos</a>
+  </section>
+
+  <section id="produtos">
+    <h2>Nossos Produtos</h2>
+    <div class="produtos">
+      <div class="produto">
+        <img src="pao.png" alt="Pães">
+        <h3>Pães Artesanais</h3>
+        <p>Deliciosos pães feitos com ingredientes frescos e receita tradicional.</p>
+        <p>Preço: R$ 10,00</p>
+      </div>
+      <div class="produto">
+        <img src="bolo.png" alt="Bolos">
+        <h3>Bolos Caseiros</h3>
+        <p>Bolos fresquinhos, feitos com carinho e ingredientes de qualidade.</p>
+        <p>Preço: R$ 25,00</p>
+      </div>
+      <div class="produto">
+        <img src="doces.png" alt="Doces">
+        <h3>Doces Especiais</h3>
+        <p>Doces deliciosos para acompanhar seu café da manhã ou lanche da tarde.</p>
+        <p>Preço: R$ 5,00</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="historia">
+    <h2>A História da Doce Sabor: O Encanto da Tradição</h2>
+    <p>A Doce Sabor é uma padaria artesanal fundada por Maria e João, um casal que decidiu resgatar receitas antigas da família e combinar tradição com carinho. O segredo da padaria está na dedicação ao fazer pães, bolos e doces, sempre com ingredientes frescos e amor. Com o tempo, o cheiro de suas delícias se espalhou pelo bairro e a padaria se tornou um ponto de encontro querido pela comunidade. Hoje, a Doce Sabor continua a crescer, mantendo a essência de acolhimento e sabor caseiro em cada receita.
+
+    </p>
+    
+  </section>
+
+  <section id="depoimentos">
+    <h2>O que nossos clientes dizem</h2>
+    <div class="slider">
+      <div class="card">
+        <p>"Os melhores pães que já comi! Sempre fresquinhos e deliciosos."</p>
+        <h4>Maria S.</h4>
+      </div>
+      <div class="card">
+        <p>"A Doce Sabor é a minha padaria favorita. Os bolos são incríveis!"</p>
+        <h4>João P.</h4>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Fale Conosco</h2>
+    <form>
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email">
+      <label for="telefone">Telefone</label>
+      <input type="tel" id="telefone" name="telefone">
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Endereço: Rua das Padarias, 123 - Bairro A</p>
+    <p>Telefone: (11) 1234-5678</p>
+    <p>E-mail: contato@docesabor.com</p>
+    <p>Horário de Funcionamento: Seg-Sex: 7h - 18h</p>
+    <div class="social">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+</body>
+</html>
